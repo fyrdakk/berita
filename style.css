@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+/* Ubah container agar full width */
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 20px 40px; /* padding kiri-kanan saja */
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.containerbox {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #7a94ff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-left: 5px;
+}
+
+.logo-img {
+    height: 45px;
+    width: auto;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    padding-top: 100px;
+    flex-wrap: wrap;
+}
+
+.left {
+    width: 50%;
+}
+
+.left h1 {
+    font-size: 40px; 
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.left p {
+    font-size: 20px; /* sedikit lebih kecil di layar besar */
+    margin-bottom: 20px; /* sedikit mengurangi margin */
+}
+
+/* Tombol */
+.buttons .btn {
+    padding: 10px 30px; /* ukuran lebih proporsional */
+    border: 2px solid;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px; /* lebih rapat */
+}
+
+.btn-blue {
+    color: #2a34c4;
+    border-color: #2a34c4;
+}
+.btn-blue:hover {
+    background-color: #2a34c4;
+    color: white;
+}
+.akhir{
+    margin-top: 20px;
+}
+
+.btn-pink {
+    color: #d63384;
+    border-color: #d63384;
+}
+.btn-pink:hover {
+    background-color: #d63384;
+    color: white;
+}
+
+.pink {
+    color: #d63384;
+    text-decoration: none;
+}
+
+.blue {
+    color: #2a34c4;
+}
+
+/* Gambar kanan */
+.right {
+    width: 45%;
+}
+
+.right img {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-box {
+    background-color: #f3f3ff;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.login-box input[type="text"],
+.login-box input[type="email"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 2px solid #2a34c4;
+    border-radius: 20px;
+    color: #2a34c4;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-box button:hover {
+    background-color: #2a34c4;
+    color: white;
+}
+.register-box {
+    background-color: #ffedf6;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.register-box input[type="text"],
+.register-box input[type="email"],
+.register-box input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.register-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 2px solid #d63384;
+    border-radius: 20px;
+    color: #d63384;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.register-box button:hover {
+    background-color: #d63384;
+    color: white;
+}
+
+.register-text {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.register-text a {
+    color: #d63384;
+    text-decoration: none;
+}
+
+.login-text {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.login-text a {
+    color: #2a34c4;
+    text-decoration: none;
+}
+/* Footer styling */
+.footer {
+    background-color: #334382;
+    color: #ffffff;
+    padding: 30px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.logo-right {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 10px;
+}
+
+.logo-right img {
+    text-align: center;
+}
+
+.logo-right p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.logo-right a {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+.team-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.team-section h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.team-list {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+}
+
+.team-list li {
+    margin-bottom: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 22px;
+    }
+
+    .logo-img {
+        height: 35px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left, .right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .left h1 {
+        font-size: 30px;
+    }
+
+    .left p {
+        font-size: 18px;
+    }
+
+    .buttons .btn {
+        display: block;
+        margin: 10px 0;
+        width: 100%;
+        padding: 12px 30px;
+        text-align: center;
+    }
+
+    .container {
+        padding: 10px 20px;
+        padding-top: 10px;
+    }
+
+   .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .team-section, .logo-right {
+        width: 45%;
+    }
+
+    .login-box {
+        padding: 20px 15px;
+    }
+
+    .login-box input,
+    .login-box button {
+        font-size: 13px;
+    }
+
+    .register-text {
+        font-size: 12px;
+    }
+}
